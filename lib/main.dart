@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:interface_flutter/prediction_page.dart';
 
+import 'dashboard_page.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -8,9 +10,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Perso App',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: PredictionPage(),
-        backgroundColor: Color.fromRGBO(52, 128, 250, 80),
+        body: DashboardPage(),
       ),
     );
   }
